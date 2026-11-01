@@ -1,0 +1,9 @@
+{
+  "profiles": "Profile",
+  "accounts": "Account",
+  "categories": "Category",
+  "merchants": "Merchant",
+  "recurring_transactions": "Recurring Transaction",
+  "tags": "Tag",
+  "transactions": "Transaction"
+}

@@ -1,0 +1,49 @@
+import React, { useState } from "react";
+import { usePathname } from "@/navigation";
+import { Menu } from "lucide-react";
+import NavbarLogo from "../NavbarLogo";
+import NavbarDesktopAuth from "../desktop/NavbarDesktopAuth";
+import SidebarMobileMenu from "../../sidebar/SidebarMobileMenu";
+
+const Navbar = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const closeMobileMenu = () => setMobileMenuOpen(false);
+
+  return (
+    <header className="h-16 shrink-0">
+      <nav className="fixed top-0 left-0 right-0 z-50 h-16 border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
+        <div className="flex h-full items-center justify-between px-4 lg:px-6">
+          <div className="flex items-center">
+            {/* Logo and Website Name */}
+            <NavbarLogo />
+          </div>
+
+          <div className="flex items-center space-x-2 lg:space-x-4">
+            {/* Desktop Auth Section */}
+            <NavbarDesktopAuth />
+
+            {/* Mobile Menu Toggle */}
+            <button
+              className="lg:hidden p-2 text-foreground hover:bg-muted rounded-md focus:outline-none cursor-pointer"
+              onClick={() => setMobileMenuOpen(true)}
+              aria-label="Open Mobile Menu"
+            >
+              <Menu className="h-6 w-6" />
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      {/* Mobile Menu Overlay */}
+      <SidebarMobileMenu
+        open={mobileMenuOpen}
+        pathname={pathname}
+        onClose={closeMobileMenu}
+      />
+    </header>
+  );
+};
+
+export default Navbar;

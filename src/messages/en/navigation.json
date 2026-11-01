@@ -1,0 +1,29 @@
+{
+  "home": "Home",
+
+  "dashboard": {
+    "base": "Dashboard",
+
+    "finance": {
+      "base": "Finance",
+      "accounts": "Accounts",
+      "transfers": "Transfers",
+      "transactions": "Transactions",
+      "recurring": "Recurring"
+    },
+
+    "content": {
+      "base": "Content",
+      "accountTypes": "Account Types",
+      "accounts": "Accounts",
+      "categories": "Categories",
+      "merchants": "Merchants",
+      "tags": "Tags"
+    },
+
+    "admin": {
+      "base": "Admin",
+      "users": "Users"
+    }
+  }
+}

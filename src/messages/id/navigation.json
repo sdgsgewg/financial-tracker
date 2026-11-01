@@ -1,0 +1,29 @@
+{
+  "home": "Beranda",
+
+  "dashboard": {
+    "base": "Dasbor",
+
+    "finance": {
+      "base": "Keuangan",
+      "accounts": "Akun",
+      "transfers": "Transfer",
+      "transactions": "Transaksi",
+      "recurring": "Berulang"
+    },
+
+    "content": {
+      "base": "Konten",
+      "accountTypes": "Jenis Akun",
+      "accounts": "Akun",
+      "categories": "Kategori",
+      "merchants": "Pedagang",
+      "tags": "Tag"
+    },
+
+    "admin": {
+      "base": "Admin",
+      "users": "Pengguna"
+    }
+  }
+}

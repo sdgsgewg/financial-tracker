@@ -1,0 +1,9 @@
+{
+  "profiles": "Profil",
+  "accounts": "Akun",
+  "categories": "Kategori",
+  "merchants": "Pedagang",
+  "recurring_transactions": "Transaksi Berulang",
+  "tags": "Label",
+  "transactions": "Transaksi"
+}
